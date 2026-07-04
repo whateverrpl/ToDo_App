@@ -1,8 +1,13 @@
-# React + Vite
+# Description
+Simple module for making carousel slider in JS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Technologies i used
+- HTML
+- CSS
+- JavaScript
 
-Currently, two official plugins are available:
+# Live link
+https://whateverrpl.github.io/carousel-slider/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Screenshots
+![screenrec__00003](https://github.com/user-attachments/assets/53e6a759-a403-4521-8ea2-ded1150d18cb)
