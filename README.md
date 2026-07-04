@@ -1,13 +1,27 @@
 # Description
-Simple module for making carousel slider in JS
+Simple ToDo App
+You can:
+- Add a new tasks
+- Delete your tasks
+- Complete your tasks
+- You can set your date for task
+- You can also set his priority 
 
 # Technologies i used
 - HTML
 - CSS
-- JavaScript
+- Java Script
+- Vite
+- React.js
+  - Components
+  - Hooks useState()
+  - Conditional rendering
+  - Props
+  - JSX
 
 # Live link
-https://whateverrpl.github.io/carousel-slider/
+[https://whateverrpl.github.io/ToDo_App/]
 
 # Screenshots
-![screenrec__00003](https://github.com/user-attachments/assets/53e6a759-a403-4521-8ea2-ded1150d18cb)
+<img width="790" height="896" alt="Video_260704032531-_online-video-cutter com_-_1_" src="https://github.com/user-attachments/assets/3542f828-1d61-45cb-b8de-7624ce817656" />
+
