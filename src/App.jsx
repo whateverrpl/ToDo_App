@@ -1,5 +1,8 @@
-import { use } from "react";
 import { useState } from "react";
+import Footer from "./components/Footer";
+import TaskForm from "./components/TaskForm";
+import TaskList from "./components/TaskList";
+import CompletedTaskList from "./components/CompletedTaskList";
 
 export default function App() {
   // =========================
@@ -137,138 +140,13 @@ export default function App() {
           <CompletedTaskList deleteTask={deleteTask} tasks={completedTasks} />
         )}
       </div>
-      <Footer />
+      <Footer>
+        <p>
+          Technologies and React concepts used: React, JSX, props, useState,
+          component composition, conditional rendering, array methods (map,
+          filter), event handling.
+        </p>
+      </Footer>
     </div>
-  );
-}
-
-// Components
-function TaskForm({ addTask }) {
-  // 1. State
-  const [title, setTitle] = useState("");
-  const [priority, setPriority] = useState("Low");
-  const [deadline, setDeadline] = useState("");
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    if (!title.trim() || !deadline.trim()) return;
-
-    const newTask = {
-      id: Date.now(),
-      title,
-      priority,
-      deadline,
-      completed: false,
-    };
-
-    addTask(newTask);
-    resetForm();
-  }
-
-  function resetForm() {
-    setTitle("");
-    setPriority("Low");
-    setDeadline("");
-  }
-
-  return (
-    <form onSubmit={handleSubmit} action="" className="task-form">
-      <input
-        onChange={(e) => setTitle(e.target.value)}
-        value={title}
-        type="text"
-        placeholder="Task title"
-        required
-      />
-      <select
-        onChange={(e) => setPriority(e.target.value)}
-        value={priority}
-        name=""
-        id=""
-      >
-        <option value="Low">Low</option>
-        <option value="Medium">Medium</option>
-        <option value="High">High</option>
-      </select>
-      <input
-        onChange={(e) => setDeadline(e.target.value)}
-        value={deadline}
-        type="datetime-local"
-      />
-      <button type="submit">Add task</button>
-    </form>
-  );
-}
-
-function TaskList({ tasks, deleteTask, completeTask }) {
-  return (
-    <ul className="task-list">
-      {tasks.map((t, index) => {
-        return (
-          <TaskItem
-            completeTask={completeTask}
-            deleteTask={deleteTask}
-            key={t.id}
-            t={t}
-            index={index + 1}
-          />
-        );
-      })}
-    </ul>
-  );
-}
-
-function CompletedTaskList({ tasks, deleteTask }) {
-  return (
-    <ul className="completed-task-list">
-      {tasks.map((t, index) => {
-        return (
-          <TaskItem
-            key={t.id}
-            t={t}
-            index={index + 1}
-            deleteTask={deleteTask}
-          />
-        );
-      })}
-    </ul>
-  );
-}
-
-function TaskItem({ t, index, deleteTask, completeTask }) {
-  const { title, priority, deadline, id, completed } = t;
-
-  return (
-    <li className={`task-item ${priority.toLowerCase()}`}>
-      <div className="task-info">
-        #{index} Task - {priority}
-        <div>
-          <strong>{title}</strong>
-        </div>
-        <div className="task-deadline">Due: {deadline}</div>
-      </div>
-      <div className="task-buttons">
-        {!completed && (
-          <button onClick={() => completeTask(id)} className="complete-button">
-            Complete
-          </button>
-        )}
-        <button onClick={() => deleteTask(id)} className="delete-button">
-          Delete
-        </button>
-      </div>
-    </li>
-  );
-}
-
-function Footer() {
-  return (
-    <footer className="footer">
-      <p>
-        Technologies and React concepts used: React, JSX, props, useState,
-        component composition, conditional rendering, array methods (map,
-        filter), event handling.
-      </p>
-    </footer>
   );
 }
