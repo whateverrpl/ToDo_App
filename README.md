@@ -29,4 +29,3 @@ You can:
 # Screenshots
 
 <img width="790" height="896" alt="Video_260704032531-_online-video-cutter com_-_1_" src="https://github.com/user-attachments/assets/3542f828-1d61-45cb-b8de-7624ce817656" />
->>>>>>> b49671e (readme.md for branch Dev)
