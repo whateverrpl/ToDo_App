@@ -30,4 +30,5 @@ You can:
 
 # Screenshots
 
-<img width="790" height="896" alt="Video_260704032531-_online-video-cutter com_-_1_" src="https://github.com/user-attachments/assets/3542f828-1d61-45cb-b8de-7624ce817656" />
+<img width="807" height="951" alt="opera_7YzsqxmBFv" src="https://github.com/user-attachments/assets/7e3883a2-bc6b-4606-b662-8dd8f0605ba6" />
+
