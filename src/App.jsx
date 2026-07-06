@@ -60,6 +60,7 @@ export default function App() {
     setOrder((prev) => (prev === "asc" ? "desc" : "asc"));
   }
 
+  // Sorting By
   if (sortBy === "date") {
     visibleTasks.sort((a, b) => {
       const diff = new Date(a.deadline) - new Date(b.deadline);
@@ -143,8 +144,8 @@ export default function App() {
       <Footer>
         <p>
           Technologies and React concepts used: React, JSX, props, useState,
-          component composition, conditional rendering, array methods (map,
-          filter), event handling.
+          useEffect, component composition, conditional rendering, array methods
+          (map, filter), event handling.
         </p>
       </Footer>
     </div>
