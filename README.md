@@ -18,6 +18,7 @@ You can:
 - React.js
   - Components
   - Hooks useState()
+  - Hooks useEffect()
   - Conditional rendering
   - Props
   - JSX
