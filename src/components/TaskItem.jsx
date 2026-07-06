@@ -1,8 +1,16 @@
-export default function TaskItem({ t, index, deleteTask, completeTask }) {
+export default function TaskItem({
+  t,
+  index,
+  deleteTask,
+  completeTask,
+  isOverdue,
+}) {
   const { title, priority, deadline, id, completed } = t;
 
   return (
-    <li className={`task-item ${priority.toLowerCase()}`}>
+    <li
+      className={`task-item ${priority.toLowerCase()} ${isOverdue ? "overdue" : ""}`}
+    >
       <div className="task-info">
         #{index} Task - {priority}
         <div>
