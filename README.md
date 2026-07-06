@@ -8,6 +8,7 @@ You can:
 - Complete your tasks
 - You can set your date for task
 - You can also set his priority
+- Overdue status
 
 # Technologies i used
 
